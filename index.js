@@ -17,8 +17,8 @@ const { Player } = require('discord-player')
 //called the dotenv file
 dotenv.config()
 
-//discord bot token
-const TOKEN = 'OTQxNDY5NTAwNDIxODMyODA2.YgWZzA._P4-Y5awx2qXplSOFx_-dHccTEQ'
+//discord bot token - add token 
+const TOKEN = ''
 
 //check if the second argument is "load"
 //node index.js load - first time only
