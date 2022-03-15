@@ -19,16 +19,15 @@ dotenv.config()
 
 //discord bot token - add token 
 const TOKEN = ''
-
 //check if the second argument is "load"
 //node index.js load - first time only
 const LOAD_SLASH = process.argv[2] == "load"
 
 //client id for the bot
-const CLIENT_ID = "941469500421832806"
+const CLIENT_ID = ""
 
 //where the bot will be executable (server id)
-const GUILD_ID = "392475756434948107"
+const GUILD_ID = ""
 
 //initialize the discord client
 const client = new Discord.Client({

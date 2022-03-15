@@ -24,9 +24,12 @@ module.exports = {
         ),
 
         run: async ({ client, interaction }) => {
+
+            //check if user is in a voice channel
             if (!interaction.member.voice.channel)
                 return interaction.editReply("You need to be in a VC to use this command")
 
+            //bot joins the user in their voice channel if they are not already in it
             const queue = await client.player.createQueue(interaction.guild)
             if (!queue.connection) await queue.connect(interaction.member.voice.channel)
 
@@ -80,7 +83,10 @@ module.exports = {
                     .setFooter({ text: `Duration: ${song.duration}`})
             }
 
-            if (!queue.playing) await queue.play()
+            if (!queue.playing){
+                await queue.play()
+                console.log("song ends")
+            } 
             await interaction.editReply({
                 embeds: [embed]
             })
