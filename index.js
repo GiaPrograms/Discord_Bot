@@ -18,16 +18,16 @@ const { Player } = require('discord-player')
 dotenv.config()
 
 //discord bot token - add token 
-const TOKEN = ''
+const TOKEN = 'Add Token'
 //check if the second argument is "load"
 //node index.js load - first time only
 const LOAD_SLASH = process.argv[2] == "load"
 
 //client id for the bot
-const CLIENT_ID = ""
+const CLIENT_ID = "Add ID"
 
 //where the bot will be executable (server id)
-const GUILD_ID = ""
+const GUILD_ID = "Add ID"
 
 //initialize the discord client
 const client = new Discord.Client({
